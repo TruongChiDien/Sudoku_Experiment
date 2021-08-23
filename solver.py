@@ -16,12 +16,12 @@ Hàm giải Sudoku bằng AC-3 và backtracking
 def solve(grid, index, total, n):
 
     # print("\nSudoku {}/{} : \n{}".format(index, total, print_grid(grid, n)))
-    print("\nSudoku {}/{}\n".format(index, total))
-
-    print("{}/{} : AC3 starting".format(index, total))
-
+    print("\nSudoku {}/{}\nCreating...".format(index, total))
+    
     # Tạo một Sudoku
     sudoku = Sudoku(grid, n)
+
+    print("{}/{} : AC3 starting".format(index, total))
 
     # Chạy AC-3    
     print('\n-----Before AC-3')
